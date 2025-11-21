@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Support - Booking Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background:rgb(192, 217, 217);
+        }
+        header {
+            background: #4a90e2;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background:#2f71bb;
+            color: black;
+            border: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #3a78c2;
+        }
+        h2{
+           text-align: center;
+           background: #6fa6e6;
+           border-radius:5px;
+           padding:10px;
+           
+           
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mental Health Support System</h1>
+        <b>Book a Session with a Professional!</b>
+    </header>
+
+    <div class="container">
+        <h2>Confidential Booking Form</h2>
+        <form id="bookingForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required />
+
+            <label for="session-type">Select Session Type</label>
+            <select id="session-type">
+                <option value="counseling">Counseling</option>
+                <option value="therapy">Therapy</option>
+                <option value="emotional-support">Emotional Support Chat</option>
+            </select>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" required />
+
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" required />
+
+            <label for="message">Additional Notes</label>
+            <textarea id="message" rows="4" placeholder="Explain your concern (optional)"></textarea>
+
+            <button type="submit"><b>Book Appointment</b></button>
+        </form>
+    </div>
+
+    <script>
+        // Alert on submit
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page reload
+            alert("Thank You! Your response has been submitted. We will reach you out shortly");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+# IntelliJ / IDEA
+.idea/
+*.iml
+
+# Build outputs (Java / Maven)
+target/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node / frontend (if you add npm later)
+node_modules/
+dist/

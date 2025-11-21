@@ -1,0 +1,462 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMate - Digital Psychological Support</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="emergency-banner">
+        <div class="container">
+            🆘 In case of emergency, call: <a href="tel:9152987821">+91-9152987821</a> or <a href="tel:1800-891-4416">National Helpline: 1800-891-4416</a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <!-- Logo Image 
+            <div class="logo" onclick="scrollToSection('home')">
+                <img src="WhatsApp Image 2025-09-25 at 17.18.45_ec02cc3c.jpg" alt="MindMate Logo" style="height:70px; cursor:pointer;">
+            </div>
+            <ul class="nav-links">
+                <li><a onclick="scrollToSection('home')">Home</a></li>
+                <li><a onclick="scrollToSection('features')">Services</a></li>
+                <li><a onclick="toggleChat()" class="chat">Chatbot </a></li>
+                <li><a onclick="scrollToSection('resources')">Resources</a></li>
+                <li><a onclick="scrollToSection('support')">Support</a></li>
+                <li><a onclick="scrollToSection('about')">About</a></li>
+            </ul>
+            <a href="signup.html" class="cta-button">Get Started</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="fade-in">Your Mental Wellness Matters</h1>
+            <p class="fade-in">A safe, confidential, and professional digital space for college students to access mental health support, resources, and peer connections.</p>
+            <div class="hero-buttons fade-in">
+                <a onclick="startAssessment()" class="cta-button">Take Assessment</a>
+                <a onclick="scrollToSection('resources')" class="btn-secondary">Explore Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>How We Support You</h2>
+            <div class="feature-grid">
+                
+                <div class="feature-card fade-in" onclick="bookAppointment()">
+                    <span class="feature-icon">📅</span>
+                    <h3>Confidential Booking</h3>
+                    <p>Secure appointment scheduling with on-campus counsellors and mental health professionals.</p>
+                </div>
+                <div class="feature-card fade-in" onclick="scrollToSection('resources')">
+                    <span class="feature-icon">📚</span>
+                    <h3>Resource Hub</h3>
+                    <p>Comprehensive library of videos, audio guides, and wellness content in regional languages.</p>
+                </div>
+                
+                <div class="feature-card fade-in" onclick="showProgress()">
+                    <span class="feature-icon">📊</span>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your mental wellness journey with personalized insights and recommendations.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-actions">
+    <div class="container">
+        <h2>Quick Actions</h2>
+        <div class="action-grid">
+            <div class="action-card">
+                <h3>Mental Health Assessment</h3>
+                <p>Take a quick screening using PHQ-9/GAD-7 tools</p>
+                <button onclick="startAssessment()">Start Assessment</button>
+            </div>
+            <div class="action-card">
+                <h3>📞 Book Counsellor</h3>
+                <p>Schedule a session with our professional counsellors</p>
+                <button onclick="bookAppointment()">Book Now</button>
+            </div>
+            
+        </div>
+    </div>
+</section>
+    <section id="resources" class="section resources-section">
+        <div class="container">
+            <h2>Resources & Tools</h2>
+            <div class="section-content">
+                <p>Access our comprehensive library of mental health resources, wellness tools, and educational content designed specifically for college students.</p>
+            </div>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>🎥 Wellness Videos</h3>
+                    <p>Educational content on stress management, anxiety relief, and mental wellness</p>
+                </div>
+                <div class="resource-card">
+                    <h3>🧘 Meditation Guides</h3>
+                    <p>Guided meditation sessions and mindfulness exercises for daily practice</p>
+                </div>
+                <div class="resource-card">
+                    <h3>📖 Articles & Tips</h3>
+                    <p>Evidence-based articles on mental health topics and self-care strategies</p>
+                </div>
+                <div class="resource-card">
+                    <h3>🆘 Crisis Resources</h3>
+                    <p>Immediate help resources and emergency contacts for crisis situations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="section support-section">
+        <div class="container">
+            <h2>Support & Help</h2>
+            <div class="section-content">
+                <p>We're here to help you navigate your mental wellness journey. Get support through multiple channels.</p>
+            </div>
+            <div class="support-grid">
+                <div class="support-card">
+                    <h3>❓ FAQ</h3>
+                    <p>Find answers to commonly asked questions about our services and mental health support</p>
+                </div>
+                <div class="support-card">
+                    <h3>📧 Contact Us</h3>
+                    <p>Reach out to our support team for any questions or concerns you may have</p>
+                </div>
+                <div class="support-card">
+                    <h3>🔐 Privacy Policy</h3>
+                    <p>Learn about how we protect your privacy and keep your information secure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About MindMate</h2>
+            <div class="section-content">
+                <p>MindMate is a digital psychological intervention system designed specifically for college students. We understand the unique challenges students face and provide accessible, confidential, and professional mental health support.</p>
+                <br>
+                <p>Our platform combines AI-driven support with human expertise, offering 24/7 assistance while maintaining complete privacy and confidentiality. We work closely with campus counselors and mental health professionals to ensure students receive the best possible care.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a onclick="startAssessment()">Mental Health Assessment</a>
+                    <a onclick="bookAppointment()">Counselling Services</a>
+                    <a onclick="scrollToSection('resources')">Educational Resources</a>
+                    <a onclick="joinCommunity()">Peer Support</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a onclick="scrollToSection('resources')">Wellness Videos</a>
+                    <a onclick="openRelaxation()">Meditation Guide</a>
+                    <a onclick="scrollToSection('resources')">Mental Health Articles</a>
+                    <a onclick="scrollToSection('resources')">Crisis Resources</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <a onclick="scrollToSection('support')">FAQ</a>
+                    <a onclick="scrollToSection('support')">Contact Us</a>
+                    <a onclick="scrollToSection('support')">Privacy Policy</a>
+                    <a onclick="scrollToSection('support')">Terms of Service</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Emergency</h3>
+                    <a href="tel:9152987821">Crisis Helpline</a>
+                    <a href="tel:1800-891-4416">National Helpline</a>
+                    <a onclick="scrollToSection('resources')">Emergency Resources</a>
+                    <a onclick="bookAppointment()">Campus Counsellor</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindMate - Developed by MindMates for Student support and Welfare.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div class="chat-widget" onclick="toggleChat()" title="Chat with AI Support">
+    <img src="https://static.vecteezy.com/system/resources/previews/019/786/706/original/chatbot-icon-cute-smiling-robot-cartoon-character-illustration-png.png" alt="Chatbot Icon">
+</div>
+
+    <!-- Chat Modal
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-header">
+            <h3>🤖 MindMate AI Support</h3>
+            <button class="close-chat" onclick="toggleChat()">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                Hello! I'm here to help you with mental health support and guidance. How are you feeling today?
+            </div>
+        </div>
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
+            <button class="send-button" onclick="sendMessage()">
+                <span>➤</span>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMate - Digital Psychological Support</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="emergency-banner">
+        <div class="container">
+            🆘 In case of emergency, call: 
+            <a href="tel:9152987821">+91-9152987821</a> 
+            or 
+            <a href="tel:1800-891-4416">National Helpline: 1800-891-4416</a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <!-- Logo Image -->
+            <div class="logo" onclick="scrollToSection('home')">
+                <img src="WhatsApp Image 2025-09-25 at 17.18.45_ec02cc3c.jpg" alt="MindMate Logo" style="height:70px; cursor:pointer;">
+            </div>
+            <ul class="nav-links">
+                <li><a onclick="scrollToSection('home')">Home</a></li>
+                <li><a onclick="scrollToSection('features')">Services</a></li>
+
+                <!-- CHATBOT BUTTON (kept as in original) -->
+                <li><a onclick="toggleChat()" class="chat">Chatbot</a></li>
+
+                <li><a onclick="scrollToSection('resources')">Resources</a></li>
+                <li><a onclick="scrollToSection('support')">Support</a></li>
+            </ul>
+            <a href="signup.html" class="cta-button">Get Started</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="fade-in">Your Mental Wellness Matters</h1>
+            <p class="fade-in">
+                A safe, confidential, and professional digital space for college students 
+                to access mental health support, resources, and peer connections.
+            </p>
+            <div class="hero-buttons fade-in">
+                <a onclick="startAssessment()" class="cta-button">Take Assessment</a>
+                <a onclick="scrollToSection('resources')" class="btn-secondary">Explore Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>How We Support You</h2>
+            <div class="feature-grid">
+
+                <!-- FIXED: Confidential Booking opens booking.html -->
+                <a href="booking.html" class="feature-card fade-in" style="text-decoration:none; color:inherit;">
+                    <span class="feature-icon">📅</span>
+                    <h3>Confidential Booking</h3>
+                    <p>Secure appointment scheduling with on-campus counsellors and mental health professionals.</p>
+                </a>
+
+                <div class="feature-card fade-in" onclick="scrollToSection('resources')">
+                    <span class="feature-icon">📚</span>
+                    <h3>Resource Hub</h3>
+                    <p>Comprehensive library of videos, audio guides, and wellness content in regional languages.</p>
+                </div>
+                
+                <div class="feature-card fade-in" onclick="showProgress()">
+                    <span class="feature-icon">📊</span>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your mental wellness journey with personalized insights and recommendations.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-actions">
+        <div class="container">
+            <h2>Quick Actions</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <h3>Mental Health Assessment</h3>
+                    <p>Take a quick screening using PHQ-9/GAD-7 tools</p>
+                    <button onclick="startAssessment()">Start Assessment</button>
+                </div>
+                <div class="action-card">
+                    <h3>📞 Book Counsellor</h3>
+                    <p>Schedule a session with our professional counsellors</p>
+                    <button onclick="window.location.href='booking.html'">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="section resources-section">
+        <div class="container">
+            <h2>Resources & Tools</h2>
+            <div class="section-content">
+                <p>Access our library of mental health resources, wellness tools, and educational content designed for college students.</p>
+            </div>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <a href="resources.html"><h3 class="h3-text">🎥 Wellness Videos</h3></a>
+                    
+                    <p>Educational content on stress management and mental wellness.</p>
+                </div>
+
+                <div class="resource-card">
+                  <a href="resources.html" ><h3 class="h3-text">🧘Meditation Guides</h3></a>
+                    
+                    <p>Guided meditation sessions and mindfulness exercises.</p>
+                </div>
+
+                <div class="resource-card">
+                    <a href="resources.html"><h3 class="h3-text">📖 Articles & Tips</h3></a>
+                    <p>Evidence-based mental health articles and self-care strategies.</p>
+                </div>
+
+                <div class="resource-card">
+                    <a href ="resources.html"><h3 class="h3-text">🆘 Crisis Resources</h3></a>
+                    <p>Immediate help and emergency contact information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="support" class="section support-section">
+        <div class="container">
+            <h2>Support & Help</h2>
+            <div class="section-content">
+                <p>We're here to help you navigate your mental wellness journey.</p>
+            </div>
+            <div class="support-grid">
+                <div class="support-card">
+                    <a href="faq.html"><h3>❓ FAQ</h3></a>
+                    <p>Find answers to commonly asked questions.</p>
+                </div>
+                <div class="support-card">
+                    <h3>📧 Contact Us</h3>
+                    <p>Reach out to our support team for any concerns.</p>
+                    <p>Phone no:9528364964</p>
+                    <p> Email:anjana123@gmail.com</p>
+                </div>
+                <div class="support-card">
+                  <a href="privacy policy.html"> <h3>🔐 Privacy Policy</h3></a>
+                    <p>Learn how we protect and secure your data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About MindMate</h2>
+            <div class="section-content">
+                <b>MindMate is a digital psychological intervention system designed specifically for college students. We understand the unique challenges students face and provide accessible, confidential, and professional mental health support.</b>
+                <br>
+                <b>Our platform combines AI-driven support with human expertise, offering 24/7 assistance while maintaining complete privacy and confidentiality. We work closely with campus counselors and mental health professionals to ensure students receive the best possible care.</b>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a onclick="startAssessment()">Mental Health Assessment</a>
+                    <a href="booking.html">Counselling Services</a>
+                    <a onclick="scrollToSection('resources')">Educational Resources</a>
+                    <a onclick="joinCommunity()">Peer Support</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a onclick="scrollToSection('resources')">Wellness Videos</a>
+                    <a onclick="openRelaxation()">Meditation Guide</a>
+                    <a onclick="scrollToSection('resources')">Mental Health Articles</a>
+                    <a onclick="scrollToSection('resources')">Crisis Resources</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <a onclick="scrollToSection('support')">FAQ</a>
+                    <a onclick="scrollToSection('support')">Contact Us</a>
+                    <a onclick="scrollToSection('support')">Privacy Policy</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Emergency</h3>
+                    <a href="tel:9152987821">Crisis Helpline</a>
+                    <a href="tel:1800-891-4416">National Helpline</a>
+                    <a onclick="scrollToSection('resources')">Emergency Resources</a>
+                    <a href="booking.html">Campus Counsellor</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindMate - Developed by MindMates for Student Support & Welfare.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING CHATBOT WIDGET -->
+    <div class="chat-widget" onclick="toggleChat()" title="Chat with AI Support">
+        <img src="https://static.vecteezy.com/system/resources/previews/019/786/706/original/chatbot-icon-cute-smiling-robot-cartoon-character-illustration-png.png" alt="Chatbot Icon">
+    </div>
+
+    <!-- CHATBOT MODAL -->
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-header">
+            <h3>🤖 MindMate AI Support</h3>
+            <button class="close-chat" onclick="toggleChat()">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                Hello! I'm here to help you with mental health support and guidance. How are you feeling today?
+            </div>
+        </div>
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="typing-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button class="send-button" onclick="sendMessage()"><span>➤</span></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
